@@ -49,14 +49,21 @@ function NavBar({ useHomeBG }) {
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#"> 
         <img src= {HomeIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>Home</span></Nav.Link>
         </Link>
+
+      <Link className="navlink" to="/AboutUs">  
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
         <img src= {AboutIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>About Us</span> </Nav.Link>
+        </Link>
 
+      <Link className="navlink" to="/Courses">  
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
         <img src= {CoursesIcon}width="20" height="20" /><span style={{ fontSize: '12px' }}>Courses</span></Nav.Link>
+        </Link>
 
+      <Link className="navlink" to="/Home">  
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"
       ><img src= {ProfileIcon} width="55" height="35"/></Nav.Link> 
+      </Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
