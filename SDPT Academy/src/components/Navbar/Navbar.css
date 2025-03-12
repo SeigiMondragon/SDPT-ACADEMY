@@ -42,7 +42,7 @@ body {
   .nav-icon,
   .nav-icon-profile {
     height: 30px;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top: 25px;
   }
   
@@ -56,4 +56,20 @@ body {
   .header-logo {
     width: 220px;
     margin: 20px;
+  }
+
+  .header-logo {
+    width: 220px;
+    margin: 20px;
+  }
+  
+  .home-body-container {
+    padding-top: 100vh; 
+    color: white; 
+    text-align: center;
+  }
+  
+  .description-container {
+    display: flex;
+    justify-content: space-between;
   }
