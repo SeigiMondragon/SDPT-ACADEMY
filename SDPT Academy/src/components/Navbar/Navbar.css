@@ -1,0 +1,59 @@
+body {
+    background-color: #1B1B1B;  
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh; 
+    background-image: url('../../assets/Home\ Header\ Bg.svg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+  }
+  
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px;
+    position: relative; 
+  }
+  
+  
+  .navlinks-container {
+    display: flex;
+    position: relative;
+  }
+  
+  
+  .nav-icon,
+  .nav-icon-profile {
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 25px;
+  }
+  
+  .navlink {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .header-logo {
+    width: 220px;
+    margin: 20px;
+  }
