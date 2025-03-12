@@ -1,0 +1,9 @@
+.border{
+
+    background-color: #1B1B1B;
+    border-bottom: #D49902 2px solid;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px  #D49902;
+   
+}
