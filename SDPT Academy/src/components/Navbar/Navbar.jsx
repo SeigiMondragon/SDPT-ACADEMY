@@ -40,12 +40,18 @@ function NavBar({ useHomeBG }) {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">  
       </Nav>
-      <Nav>
-      <Nav.Link className='text-light nav-link' href="#"> 
-        <img src= {HomeIcon}/>Home</Nav.Link>
-      <Nav.Link className='text-light' href="#"><img src= {AboutIcon}/>About Us</Nav.Link>
-      <Nav.Link className='text-light' href="#"><img src= {CoursesIcon}/>Courses</Nav.Link>
-      <Nav.Link className='text-light' href="#"><img src= {ProfileIcon}/>Profile</Nav.Link>
+      <Nav className='d-flex '>
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"> 
+        <img src= {HomeIcon} width="20" height="20"/><span className='fs-6'>Home</span></Nav.Link>
+
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center ' href="#">
+        <img src= {AboutIcon} width="20" height="20"/><span className='fs-6'>About Us</span> </Nav.Link>
+
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#">
+        <img src= {CoursesIcon}width="20" height="20" /><span className='fs-6'>Courses</span></Nav.Link>
+
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"
+      ><img src= {ProfileIcon} width="50" height="50"/></Nav.Link> 
       </Nav>
     </Navbar.Collapse>
   </Container>
