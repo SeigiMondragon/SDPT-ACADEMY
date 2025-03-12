@@ -6,7 +6,6 @@ import ProfileIcon from '../../assets/Profile Icon.svg'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navbar.css'
 
 import { Link } from 'react-router-dom'
@@ -23,7 +22,7 @@ function NavBar({ useHomeBG }) {
   //       <div className="navlinks-container">
   //       <Link className="navlink" to="/Home">
   //          <a href="#" className='nav-link active'> <img className="nav-icon" src={HomeIcon} alt="Home" />HOME</a>
-  //         </Link>
+  //        </Link>
   //           <a href="#" className='nav-link active'><img className="nav-icon" src={AboutIcon} alt="About Us" />About Us</a>
   //          <a href="#" className='nav-link active'><img className="nav-icon" src={CoursesIcon} alt="Courses" />Courses</a>
   //         <a href="#" className='nav-link active'><img className="nav-icon-profile" src={ProfileIcon} alt="Profile" /></a> 
@@ -33,30 +32,36 @@ function NavBar({ useHomeBG }) {
   //   </div>
   // );
 
+<>{useHomeBG && <div className="header-bg"></div>}
   <Navbar collapseOnSelect expand="lg" className="bg-body-dark">
   <Container>
-    <Navbar.Brand className='text-light' href="#home">SDPT Solutions</Navbar.Brand>
+    <Navbar.Brand className='text-light nav-link d-flex flex-column align-items-center' href="#home">
+    <img src= {Logo} width="200" height="40"/>
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
+      
       <Nav className="me-auto">  
       </Nav>
-      <Nav className='d-flex '>
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"> 
+      <Nav className='d-flex'>
+     
+      <Link className="navlink" to="/Home">
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#"> 
         <img src= {HomeIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>Home</span></Nav.Link>
-
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center ' href="#">
+        </Link>
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
         <img src= {AboutIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>About Us</span> </Nav.Link>
 
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#">
+      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
         <img src= {CoursesIcon}width="20" height="20" /><span style={{ fontSize: '12px' }}>Courses</span></Nav.Link>
 
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"
-      ><img src= {ProfileIcon} width="50" height="50"/></Nav.Link> 
+      ><img src= {ProfileIcon} width="55" height="35"/></Nav.Link> 
       </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
-
+</>
   )
 }
 
