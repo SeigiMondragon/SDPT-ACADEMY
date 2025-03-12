@@ -1,17 +1,22 @@
+import Figure from 'react-bootstrap/Figure'
 import Logo from '../../assets/SDPT Logo.svg'
-
+import styles from './Home.module.css'
 
 function HomeBody() {
     return (
-        <div className="home-body-container">
-           <h2>What is SDPT Academy?</h2>
-           <hr/>
-            <img src={Logo} alt="" />
-           <div className='description-container'>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem veniam, reiciendis possimus eligendi neque deserunt tenetur fugiat praesentium accusantium dolor cum molestias ex quaerat sapiente velit officia labore itaque. Magnam!</p>
-           </div>
-            <hr/>
+        <div className={styles.homeBody}>
+        <h2 className="text-center">What is SDPT Academy?</h2>
+        <hr />
+        <div className="d-flex align-items-center justify-content-center w-75 mx-auto gap-4">
+          <div>
+            <img src={Logo} alt="" className="img-fluid"  width= "200" height="200"/>
+          </div>
+          <div className="w-50 text-center">
+            <p>SDPT Academy is an online platform where in teaches Programming Languages through the use of our own native language - Tagalog. It aims to teach Filipino Programmers who wants to be developers. Ginaya ko lang intro heheh AHHAHAHAHAH bsta ganto ganyan. It is own by SDPT Solutions a Youtube Channel that teachers about Programming.</p>
+          </div>
         </div>
+        <hr />
+      </div>
     );
 }
 export default HomeBody;
