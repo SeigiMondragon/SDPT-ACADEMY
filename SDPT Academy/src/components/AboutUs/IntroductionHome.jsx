@@ -11,7 +11,7 @@ function IntroductionHome(){
           </div>
           <div className="col ">
 
-            <p className="text-light" style="border : 1px solid red">
+            <p className="text-light">
                 Passionate <br/>
                 Individuals that aims <br/>
                 to teach Filipinos <br/>
