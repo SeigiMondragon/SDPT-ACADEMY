@@ -9,7 +9,7 @@ import Courses from './components/CoursesCatalog/Courses.jsx';
 const Router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <Courses/>
   },
   {
     path: "Home",
