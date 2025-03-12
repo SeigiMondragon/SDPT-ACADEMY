@@ -6,7 +6,7 @@ function HomeBody() {
     return (
         <div className={styles.homeBody}>
         <h2 className="text-center">What is SDPT Academy?</h2>
-        <hr />
+        <hr/>
         <div className="d-flex align-items-center justify-content-center w-75 mx-auto gap-4">
           <div>
             <img src={Logo} alt="" className="img-fluid"  width= "200" height="200"/>
