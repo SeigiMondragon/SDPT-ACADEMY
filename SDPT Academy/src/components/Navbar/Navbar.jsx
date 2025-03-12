@@ -18,11 +18,11 @@ function NavBar({ useHomeBG }) {
         <a href="#"><img className="navbar-brand" src={Logo} alt="Logo" /></a>
         <div className="navlinks-container">
         <Link className="navlink" to="/Home">
-            <img className="nav-icon" src={HomeIcon} alt="Home" />
+           <a href="#" className='nav-link active'> <img className="nav-icon" src={HomeIcon} alt="Home" /></a>
           </Link>
-            <img className="nav-icon" src={AboutIcon} alt="About Us" />      
-            <img className="nav-icon" src={CoursesIcon} alt="Courses" />        
-            <img className="nav-icon-profile" src={ProfileIcon} alt="Profile" />  
+            <a href="#" className='nav-link active'><img className="nav-icon" src={AboutIcon} alt="About Us" /></a>
+           <a href="#" className='nav-link active'><img className="nav-icon" src={CoursesIcon} alt="Courses" /></a>
+          <a href="#" className='nav-link active'><img className="nav-icon-profile" src={ProfileIcon} alt="Profile" /></a> 
         </div>
       </div>
       </div> 
