@@ -56,20 +56,16 @@ function Courses (){
                     <div class = "col-5">
                         <div>
                             <div class>
-                                <div className="row">
-                                    <div className="col-3">
-                                        <p>18 lessons</p>
-                                    </div>
-                                    <div className="col-3">
-                                        <p>4h 20m</p>
-                                    </div>
-                                    <div className="col-3">
-                                        <p>69 students</p>
-                                    </div>
-                                    <div className="col-3">
-                                        <p>4.45</p>
-                                    </div>
-                                </div>
+                                <ul class = "d-flex align-items-start list-unstyled">
+                                    <li class = "flex-sm-fill">18 Lessons</li>
+                                    <li class = "flex-sm-fill">4h 20m</li>
+                                    <li class = "flex-sm-fill">69 Students</li>
+                                    <li class = "flex-sm-fill">4.45</li>
+                                </ul>
+
+                                <h2>Advanced Java Tutorial</h2>
+
+                                <p>Learn different programming languages through the use of our Filipino Language which is Tagalog using the Java Language.</p>
                             </div>
                         </div>
                     </div>
