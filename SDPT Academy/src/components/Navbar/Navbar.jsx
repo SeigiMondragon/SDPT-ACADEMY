@@ -33,41 +33,39 @@ function NavBar({ useHomeBG }) {
   // );
 
 <>{useHomeBG && <div className="header-bg"></div>}
-  <Navbar collapseOnSelect expand="lg" className="bg-body-dark">
-  <Container>
-    <Navbar.Brand className='text-light nav-link d-flex flex-column align-items-center' href="#home">
-    <img src= {Logo} width="200" height="40"/>
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      
-      <Nav className="me-auto">  
-      </Nav>
-      <Nav className='d-flex'>
-     
-      <Link className="navlink" to="/Home">
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#"> 
-        <img src= {HomeIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>Home</span></Nav.Link>
-        </Link>
+<Navbar collapseOnSelect expand="lg" className="bg-body-dark">
+        <Container>
+          <Navbar.Brand className="text-light nav-link d-flex flex-column align-items-center" href="#home">
+            <img src={Logo} width="200" height="40" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto"></Nav>
+            <Nav className="d-flex">
+              
+              <Nav.Link as={Link} to="/Home" className="text-light nav-link d-flex flex-column align-items-center me-3">
+                <img src={HomeIcon} width="20" height="20" />
+                <span style={{ fontSize: "12px" }}>Home</span>
+              </Nav.Link>
 
-      <Link className="navlink" to="/AboutUs">  
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
-        <img src= {AboutIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>About Us</span> </Nav.Link>
-        </Link>
+              <Nav.Link as={Link} to="/AboutUs" className="text-light nav-link d-flex flex-column align-items-center me-3">
+                <img src={AboutIcon} width="20" height="20" />
+                <span style={{ fontSize: "12px" }}>About Us</span>
+              </Nav.Link>
 
-      <Link className="navlink" to="/Courses">  
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center me-3' href="#">
-        <img src= {CoursesIcon}width="20" height="20" /><span style={{ fontSize: '12px' }}>Courses</span></Nav.Link>
-        </Link>
+              <Nav.Link as={Link} to="/Courses" className="text-light nav-link d-flex flex-column align-items-center me-3">
+                <img src={CoursesIcon} width="20" height="20" />
+                <span style={{ fontSize: "12px" }}>Courses</span>
+              </Nav.Link>
 
-      <Link className="navlink" to="/Home">  
-      <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"
-      ><img src= {ProfileIcon} width="55" height="35"/></Nav.Link> 
-      </Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+              <Nav.Link as={Link} to="/Profile" className="text-light nav-link d-flex flex-column align-items-center">
+                <img src={ProfileIcon} width="55" height="35" />
+              </Nav.Link>
+              
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 </>
   )
 }
