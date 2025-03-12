@@ -40,20 +40,45 @@ function Courses (){
         </div>
         </div> */}
         <div>
-            <div class = "container ">
+            <div class = "container d-flex justify-content-center">
             <button type="button" class="btn btn-outline-warning">Buy Courses</button>
             <button type="button" class="btn btn-outline-warning">Owned Courses</button>
             </div>
 
             <div class = "container">
                 <div class = "row">
-                    <div class = "col">
-                        <p>test</p>
+                    <div class = "col-5">
+                        <div class = "embed-responsive">
+                        <iframe src="https://www.youtube.com/embed/TqHvIYjyOnQ?si=hkm_A-8E-zjY9RnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
 
-                    <div class = "col">
-                    <p>test</p>
+                    <div class = "col-5">
+                        <div>
+                            <div class>
+                                <div className="row">
+                                    <div className="col-3">
+                                        <p>18 lessons</p>
+                                    </div>
+                                    <div className="col-3">
+                                        <p>4h 20m</p>
+                                    </div>
+                                    <div className="col-3">
+                                        <p>69 students</p>
+                                    </div>
+                                    <div className="col-3">
+                                        <p>4.45</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div>
+                <div class = "container d-flex justify-content-center">
+
                 </div>
             </div>
         </div>
