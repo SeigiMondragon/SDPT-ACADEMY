@@ -6,7 +6,8 @@ function Home() {
     return (
         <>
           <NavBar useHomeBG={true}/>
-          <HomeBody/>
+        <HomeBody/>
+         
         </>
     );
 }
