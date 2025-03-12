@@ -42,13 +42,13 @@ function NavBar({ useHomeBG }) {
       </Nav>
       <Nav className='d-flex '>
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"> 
-        <img src= {HomeIcon} width="20" height="20"/><span className='fs-6'>Home</span></Nav.Link>
+        <img src= {HomeIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>Home</span></Nav.Link>
 
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center ' href="#">
-        <img src= {AboutIcon} width="20" height="20"/><span className='fs-6'>About Us</span> </Nav.Link>
+        <img src= {AboutIcon} width="20" height="20"/><span style={{ fontSize: '12px' }}>About Us</span> </Nav.Link>
 
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#">
-        <img src= {CoursesIcon}width="20" height="20" /><span className='fs-6'>Courses</span></Nav.Link>
+        <img src= {CoursesIcon}width="20" height="20" /><span style={{ fontSize: '12px' }}>Courses</span></Nav.Link>
 
       <Nav.Link className='text-light nav-link d-flex flex-column align-items-center' href="#"
       ><img src= {ProfileIcon} width="50" height="50"/></Nav.Link> 
