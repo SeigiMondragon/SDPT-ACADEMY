@@ -1,0 +1,46 @@
+.meetTheTeam{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.leftCard{
+    margin-top: 100px;
+    box-shadow: 3px 7px 12px 12px black, -3px -3px 30px rgba(255, 255, 255, 0.411);
+    padding: 3%;
+
+    border-radius: 20px;
+
+}
+.upperLeft h2{
+    color: white;
+}
+
+.upperLeft h1{
+    color: #D49902;
+}
+
+.lowerLeft{
+    color: white;
+    border-left: white 3px solid;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    font-family: Montseratt;
+    font-family: 700;
+}
+
+.members{
+    color: #D49902;
+    font-family: Montseratt;
+    font-weight: 700;
+
+}
+.horizontal{
+    box-shadow: 3px 7px 12px 12px black, -3px -3px 30px rgba(255, 255, 255, 0.411); 
+}
+@font-face {
+    font-family: Montseratt;
+    src: url(../../../public/Montserrat-VariableFont_wght.ttf);
+}
