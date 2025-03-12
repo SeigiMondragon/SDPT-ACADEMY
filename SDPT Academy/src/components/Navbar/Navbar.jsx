@@ -1,24 +1,31 @@
-import Logo from '../../assets/sdpt.svg'
+import Logo from '../../assets/SDPT Nav Logo.svg'
 import HomeIcon from '../../assets/Home Icon.svg'
 import AboutIcon from '../../assets/About Icon.svg'
 import CoursesIcon from '../../assets/Courses Icon.svg'
 import ProfileIcon from '../../assets/Profile Icon.svg'
+import './Navbar.css'
+
+import { Link } from 'react-router-dom'
 
 
 function NavBar({ useHomeBG }) {
   return (
     <div className="header">
-      
-      <div className="nav-container">
-        <img className="header-logo" src={Logo} alt="Logo" />
+        {useHomeBG && <div className="header-bg"></div>}
+
+      <div className="navbar">
+      <div className="container">
+        <a href="#"><img className="navbar-brand" src={Logo} alt="Logo" /></a>
         <div className="navlinks-container">
-            <img className="nav-icon" src={HomeIcon} alt="Home" />
-            <img className="nav-icon" src={AboutIcon} alt="About Us" />      
-            <img className="nav-icon" src={CoursesIcon} alt="Courses" />        
-            <img className="nav-icon-profile" src={ProfileIcon} alt="Profile" />  
-            <img src= {profile} alt="" />
+        <Link className="navlink" to="/Home">
+           <a href="#" className='nav-link active'> <img className="nav-icon" src={HomeIcon} alt="Home" /></a>
+          </Link>
+            <a href="#" className='nav-link active'><img className="nav-icon" src={AboutIcon} alt="About Us" /></a>
+           <a href="#" className='nav-link active'><img className="nav-icon" src={CoursesIcon} alt="Courses" /></a>
+          <a href="#" className='nav-link active'><img className="nav-icon-profile" src={ProfileIcon} alt="Profile" /></a> 
         </div>
       </div>
+      </div> 
     </div>
   );
 }

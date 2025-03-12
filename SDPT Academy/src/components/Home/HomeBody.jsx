@@ -1,3 +1,5 @@
+import HomeNavBG from '../../assets/Home Header Bg.svg'
+
 
 function HomeBody() {
     return (
