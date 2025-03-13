@@ -1,4 +1,5 @@
 import NavBarBorder from "../AboutUsPage/NavBarBorder"
+import '../../global.css';
 
 
 function Courses (){
