@@ -35,7 +35,7 @@ function NavBar({ useHomeBG }) {
 <>{useHomeBG && <div className="header-bg"></div>}
 <Navbar collapseOnSelect expand="lg" className="bg-body-dark">
         <Container>
-          <Navbar.Brand className="text-light nav-link d-flex flex-column align-items-center" href="#home">
+          <Navbar.Brand as={Link} to="/Home" className="text-light nav-link d-flex flex-column align-items-center">
             <img src={Logo} width="200" height="40" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
