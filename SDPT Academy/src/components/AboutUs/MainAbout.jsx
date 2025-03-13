@@ -8,8 +8,6 @@ function MainAboutUs() {
       <>
 
         <NavBorder/>
-   
-
         <IntroductionHome/>
       </>
 

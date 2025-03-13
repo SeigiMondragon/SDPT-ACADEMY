@@ -3,5 +3,14 @@
     padding-top: 100vh; 
     color: white; 
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .hrCustom {
+    border: none;
+    height: 2px;
+    background-color: #333; 
+    margin: 20px auto; 
+    width: 65%;
+}
   
