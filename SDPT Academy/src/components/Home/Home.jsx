@@ -6,9 +6,8 @@ import '../../global.css';
 function Home() {
     return (
         <>
-          <NavBar useHomeBG={true}/>
-        <HomeBody/>
-         
+        <NavBar useHomeBG={true}/>
+        <HomeBody/>   
         </>
     );
 }
